@@ -11,7 +11,7 @@ function dice_roll(x, y, z) {
 
 
 function play_game(n) {
-  let total = 1000
+  let total = 500
   let bet = [10, 10 , 15, 15, 50, 100, 200]
   let small = true
   let counter = 0
@@ -30,8 +30,13 @@ function play_game(n) {
       console.log(`bet: ${bet[counter]}`)
       total = total - bet[counter]
       console.log(`total: ${total}`)
+      if (total <= 0) {
+        console.log(`total : ${total}`)
+        break
+      }
       counter++
       console.log(`NEW counter: position[${counter}]`)
+
       if (counter > bet.length - 1) {
         counter = 0
       }
@@ -50,6 +55,10 @@ function play_game(n) {
       console.log(`bet: ${bet[counter]}`)
       total = total - bet[counter]
       console.log(`total: ${total}`)
+      if (total <= 0) {
+        console.log(`total : ${total}`)
+        break
+      }
       counter++
       console.log(`NEW counter: position[${counter}]`)
       small = !small
@@ -63,6 +72,10 @@ function play_game(n) {
       console.log(`bet: ${bet[counter]}`)
       total = total - bet[counter]
       console.log(`total: ${total}`)
+      if (total <= 0) {
+        console.log(`total : ${total}`)
+        break
+      }
       counter++
       console.log(`NEW counter: position[${counter}]`)
       small = !small
@@ -86,4 +99,4 @@ function play_game(n) {
 
 // 11
 
-play_game(1000)
+play_game(100)
