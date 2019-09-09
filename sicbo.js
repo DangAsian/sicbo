@@ -80,7 +80,8 @@ function play_game(n) {
        }
     }
   }
-  console.log(total)
+  console.log("-------------------------------")
+  console.log(`Total: $${total}`)
 }
 
 // 11
