@@ -12,7 +12,7 @@ function dice_roll(x, y, z) {
 
 function play_game(n) {
   let total = 1000
-  let bet = [5, 10 , 15, 50, 100, 200]
+  let bet = [10, 10 , 15, 15, 50, 100, 200]
   let small = true
   let counter = 0
 
@@ -85,4 +85,4 @@ function play_game(n) {
 
 // 11
 
-play_game(10)
+play_game(1000)
